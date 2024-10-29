@@ -1,0 +1,88 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+.services{
+   position: relative;
+   padding: 1rem 0;
+   @include media-breakpoint-down(md){
+    padding: 0rem;
+   }
+}
+.icon{
+    font-size: 1.8rem;
+    color: $primary;
+    @include media-breakpoint-up(lg){
+        margin-top: 2.5rem;
+    }
+}
+.services__contents{
+    padding: 1rem;
+    margin-top: 0rem;
+    @include media-breakpoint-up(lg){
+        margin-top: 1.5rem;
+    }
+    @include media-breakpoint-down(md){
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+    
+}
+.services__pic{
+    max-width: 100%;
+    @include media-breakpoint-down(md){
+        margin-top: 0;
+        margin-bottom: 0;
+        display: none;
+    }
+}
+
+#webillustration{
+    margin-left: 150px;
+    
+    @include media-breakpoint-down(md){
+        margin-left: 0;
+        padding: 0%;
+    }
+    @include media-breakpoint-down(xxl){
+        margin-left: 0;
+    }
+    @include media-breakpoint-up(lg){
+        margin-left: 0%;
+    }
+  //  @include media-breakpoint-up(md){
+    //    margin: left 150px; 
+    //}
+}
+#webillustration2{
+    margin-left: 150px;
+    @include media-breakpoint-down(md){
+        margin-left: 0;
+    }
+    @include media-breakpoint-down(xxl){
+        margin-left: 0;
+    }
+    @include media-breakpoint-up(lg){
+        margin-left: 0%;
+    }
+    
+}
+
+.displayonlyinmobile{
+    padding: 1rem;
+    @include media-breakpoint-up(sm){
+        display: none;
+    }
+}
+
+.desc{
+    color: $gray-600;
+}
+
+.servicesheading{
+    color: navy;
+   font-size: 1.8rem;
+   background-image: linear-gradient(to right,navy,blue);
+   background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

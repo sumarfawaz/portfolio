@@ -1,0 +1,29 @@
+{
+  "name": "vaceyra.com",
+  "version": "1.0.0",
+  "description": "build your website at a reasonal cost price.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "vaceyra.com",
+    "vaceyra.lk",
+    "web-developers",
+    "website-builders",
+    "website-builders-in-Sri",
+    "Lanka\u001b[D\u001b[D\u001b[D\u001b[D\u001b[-\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+    "website-builders-in-srilanka",
+    "how-to-build-a-website"
+  ],
+  "author": "vaceyra.com.lk",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.54.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.2",
+    "autoprefixer": "^10.4.7"
+   
+  }
+}

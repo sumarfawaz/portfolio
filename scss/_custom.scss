@@ -1,0 +1,45 @@
+
+//THEME COLORS
+$red-dark: #eb0202 ;
+$red-light: #e36666;
+$blue:#2F303A ;
+$footer:#151414;
+
+$clr: navy;
+$clr2: lightblue;
+
+$clr3: #ad1359;
+$clr4: #1356ad;
+
+$neon: #d4340d;
+//WHITE AND GREY COLORS
+$white:    #fff;
+$gray-100: #f8f9fa ;
+$gray-200: #e9ecef ;
+$gray-300: #dee2e6 ;
+$gray-400: #ced4da ;
+$gray-500: #adb5bd ;
+$gray-600: #6c757d ;
+$gray-700: #495057 ;
+$gray-800: #343a40 ;
+$gray-900: #212529 ;
+$black:    #000 ;
+
+//primary and secondary theme colors
+$primary:       $red-dark;
+$secondary:     $blue;
+
+//accordion color and icon override
+$accordion-icon-color:                    $primary;
+$accordion-icon-active-color:             $secondary;
+
+$accordion-icon-width:                    1.875rem;
+
+
+$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z'/></svg>") !default;
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z'/></svg>") !default;
+$accordion-padding-y:                     1.5rem ;
+$accordion-padding-x:                     1.5rem ;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

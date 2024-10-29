@@ -1,0 +1,254 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+.display-2{
+    margin: bottom 1rem; 
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+   font-family: 'Montserrat Alternates', sans-serif;
+
+    &--intro{
+        display: inline-block;
+        font-weight: 700;
+      //font-family: 'Montserrat', sans-serif;
+      font-family: 'Edu VIC WA NT Beginner', cursive;
+        font-size: 3rem;
+    }
+
+    &--description{
+        font-size: 1rem;
+        display: block;
+        //text-align: justify;
+        margin: top 1.5rem; 
+        font-family: 'Edu VIC WA NT Beginner', cursive;
+        text-transform: none;
+
+        @include media-breakpoint-up(lg){
+            font-size: 1.4rem;
+            display: inline-block;
+
+        }
+    }
+}
+
+
+//LOGO SLIDER START
+h2{
+    text-align:center;
+    padding: 20px;
+  }
+  /* Slider */
+  
+  .slick-slide {
+      margin: 0px 20px;
+  }
+  
+  .slick-slide img {
+      width: 100%;
+  }
+  
+  .slick-slider
+  {
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+              user-select: none;
+      -webkit-touch-callout: none;
+      -khtml-user-select: none;
+      -ms-touch-action: pan-y;
+          touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slick-list
+  {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+  }
+  .slick-list:focus
+  {
+      outline: none;
+  }
+  .slick-list.dragging
+  {
+      cursor: pointer;
+      cursor: hand;
+  }
+  
+  .slick-slider .slick-track,
+  .slick-slider .slick-list
+  {
+      -webkit-transform: translate3d(0, 0, 0);
+         -moz-transform: translate3d(0, 0, 0);
+          -ms-transform: translate3d(0, 0, 0);
+           -o-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+  }
+  
+  .slick-track
+  {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block;
+  }
+  .slick-track:before,
+  .slick-track:after
+  {
+      display: table;
+      content: '';
+  }
+  .slick-track:after
+  {
+      clear: both;
+  }
+  .slick-loading .slick-track
+  {
+      visibility: hidden;
+  }
+  
+  .slick-slide
+  {
+      display: none;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+  }
+  [dir='rtl'] .slick-slide
+  {
+      float: right;
+  }
+  .slick-slide img
+  {
+      display: block;
+  }
+  .slick-slide.slick-loading img
+  {
+      display: none;
+  }
+  .slick-slide.dragging img
+  {
+      pointer-events: none;
+  }
+  .slick-initialized .slick-slide
+  {
+      display: block;
+  }
+  .slick-loading .slick-slide
+  {
+      visibility: hidden;
+  }
+  .slick-vertical .slick-slide
+  {
+      display: block;
+      height: auto;
+      border: 1px solid transparent;
+  }
+  .slick-arrow.slick-hidden {
+      display: none;
+  }
+
+  //LOGO SLIDER END
+
+//HEADING LINE
+
+.heading-line::before{
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
+.heading-line::after{
+    content: "";
+    width: 2rem;
+    padding: 0.5rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
+
+
+//FONT FOR SERVICE (Display-3)
+.display-3{
+    font-family: 'Montserrat Alternates', sans-serif;
+    @include media-breakpoint-down(md){
+        font-size: 2rem;
+    }
+}
+
+//border right
+.border-right{
+    border-right: 0.1rem solid $red-light;
+    height: 100%;
+    @include media-breakpoint-down(sm){
+       border: none;
+       border-bottom: 0.1rem solid $red-light;
+    }
+    @include media-breakpoint-down(md){
+        border: none;
+        border-bottom: 0.1rem solid $red-light;
+     }
+}
+.display-4{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1px;
+}
+
+.--title{
+    font-size: 1rem;
+    color: $primary;
+    text-transform: capitalize;
+    display: inline-block;
+   background-image: linear-gradient(to right,navy,$primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-up(lg){
+      font-size: 1.8rem;
+    }
+
+}
+
+//two lines with white background as head-line2
+.heading-line2::before{
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $white;
+}
+.heading-line2::after{
+    content: "";
+    width: 2rem;
+    padding: 0.5rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $white;
+}
+
+.display-services{
+    font-size: 3rem;
+    font-weight: 300;
+    color: $white;
+    font-family: 'Montserrat', sans-serif;
+    @include media-breakpoint-down(md){
+        font-size: 1.5rem;
+
+    }
+    @include media-breakpoint-down(lg){
+        font-size: 1.5rem;
+
+    }
+
+}
